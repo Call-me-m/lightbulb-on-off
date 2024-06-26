@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html>
+
+
+<body>
+    
+<html> 
+<head> 
+    <title>Text alignment</title> 
+    <style> 
+        h1{text-align: center;} 
+    </style> 
+</head> 
+<div id="container">
+    <h1 id="text2">Lightbulb project
+        by Emerson Argote</h1>
+
+  <p id="text" >
+    Hi, my name is Emerson Argote, something im passonate about and hope to work in is working in the animation industry as a character designer and a rough animator. For the lightbulb to change in image, the onclick code must be implented so that the image knows what it will be changing. The code that I based my project on required an IF/Else statment with the image coded on the bottom of that statment, I place my images of a on and off lightbulb in their respecive places where the off one would be the if statment and the on would be the else statment
+  
+    
+</p>
+
+<!-- <script>
+function func()
+{
+    
+}
+</script> -->
+    
+        
+       
+
+  
+
+
+
+
+<img id="myImage" onclick="changeImage()" src="https://upload.wikimedia.org/wikipedia/commons/8/85/Light-bulb-1.jpg" width="300" height="300">
+</div>
+
+<script>
+var bulbon=false
+
+function changeImage() {
+  
+  var image = document.getElementById('myImage');
+  if (bulbon==true) {
+    image.src = "https://upload.wikimedia.org/wikipedia/commons/8/85/Light-bulb-1.jpg";
+    text2
+     
+
+    document.getElementById("text").style.color="red";
+    document.getElementById("text2").style.color="red";
+   
+  
+    document.body.style.backgroundColor="gray";
+    document.getElementById("text").style.font="calibri";
+    bulbon=false
+     document.getElementById("text2").style.font="calibri";
+    bulbon=false
+
+
+  } else {
+    image.src = "https://upload.wikimedia.org/wikipedia/commons/c/c7/Cuerpo_humano_jaqaru.jpg";
+    text2
+    document.getElementById("text").style.color="black";
+    document.getElementById("text2").style.color="black";
+    document.body.style.backgroundColor="white";
+    document.getElementById("text").style.font="calibri";
+    bulbon=true
+     document.getElementById("text2").style.font="calibri";
+    bulbon=true
+  }  
+  
+  
+
+}
+</script>
+
+</body>
+</html>
+ 
+
+   
+   
+   
+    
